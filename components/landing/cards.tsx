@@ -43,8 +43,15 @@ function Card(props: CardProps) {
         <div
           className={`flex flex-col md:w-sm items-start text-left p-6 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md hover:border-emerald-500/30 hover:bg-slate-900/60 transition-all duration-300 group ${props.soon ? 'md:blur-xs md:hover:blur-none md:focus:blur-none md:animate-pulse' : ''}` }
         >
-          <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/10 mb-5 group-hover:scale-110 transition-transform duration-300">
-            {props.icon}
+          <div className="flex w-full justify-between items-start">
+            <div className="flex w-fit p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/10 mb-5 group-hover:scale-110 transition-transform duration-300">
+              {props.icon}
+            </div>
+            {props.soon && (
+              <span className="px-2.5 py-1 text-xs font-medium text-amber-400 bg-amber-500/10 border border-amber-500/20 rounded-full select-none">
+                Em breve
+              </span>
+            )}
           </div>
           <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-emerald-300 transition-colors">
             {props.title}
