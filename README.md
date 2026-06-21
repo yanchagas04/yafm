@@ -66,30 +66,19 @@ Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 
 ---
 
-## Scripts disponíveis
-
-| Comando      | Descrição                            |
-| ------------ | ------------------------------------ |
-| `pnpm dev`   | Inicia o servidor de desenvolvimento |
-| `pnpm build` | Gera o build de produção             |
-| `pnpm start` | Inicia o servidor em modo produção   |
-| `pnpm lint`  | Executa o ESLint                     |
-
----
-
 ## Estrutura do projeto
 
 ```
 yafm/
 ├── app/
-│   ├── globals.css       # Estilos globais
-│   ├── layout.tsx        # Layout raiz
-│   └── page.tsx          # Página inicial
+│   ├── globals.css       
+│   ├── layout.tsx        
+│   └── page.tsx          
 ├── components/
 │   └── landing/
-│       ├── cards.tsx     # Cards de funcionalidades
-│       ├── header.tsx    # Cabeçalho / navegação
-│       └── purpose.tsx   # Seção "O que é o YAFM?"
+│       ├── cards.tsx     
+│       ├── header.tsx    
+│       └── purpose.tsx   
 └── public/               # Arquivos estáticos
 ```
 
