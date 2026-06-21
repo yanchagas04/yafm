@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# YAFM — _Yet Another Financial Manager_
 
-## Getting Started
+> Só mais um gerenciador financeiro qualquer. Feito para resolver um problema real, de forma ágil e sem burocracia.
 
-First, run the development server:
+---
+
+## O que é?
+
+O **YAFM** é um gerenciador de gastos pessoais criado para responder de forma simples as perguntas que todo mundo tem no fim do mês:
+
+- _Quanto eu gastei?_
+- _Com o quê eu gastei?_
+- _Em qual cartão foi essa compra?_
+- _Fiz esse gasto pra alguém da minha família?_
+
+Sem precisar cadastrar dados bancários, sem integrações complexas — só você e seus lançamentos.
+
+---
+
+## Funcionalidades
+
+### ✅ Disponíveis no Lançamento
+
+| Funcionalidade          | Descrição                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Sem complicação**     | Lançar um gasto não deve levar mais do que 30 segundos. Interface direta ao ponto, sem menus infinitos. |
+| **Fácil de ver**        | Visualizações práticas para responder a temida pergunta: _Quanto e com o que eu gastei esse mês?_       |
+| **Com quem eu gastei?** | Uma forma simples de dizer pra quem você fez uma compra — ideal pra quando o pai/mãe pede algo.         |
+
+### 🚧 Em breve
+
+| Funcionalidade   | Descrição                                                                                                   |
+| ---------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Me lembre**    | Lembretes por e-mail para não esquecer de pagar a fatura do cartão, junto de um relatório mensal de gastos. |
+| **Deixa comigo** | Criação livre de tags para categorizar gastos, sem padrões vagos (limitado a 5 tags).                       |
+
+---
+
+## Stack
+
+- **Framework:** [Next.js 16](https://nextjs.org/)
+- **Linguagem:** TypeScript
+- **UI:** React 19 + [Lucide React](https://lucide.dev/)
+- **Estilos:** Tailwind CSS v4
+- **Package manager:** pnpm
+
+---
+
+## Rodando localmente
+
+**Pré-requisitos:** Node.js 18+ e pnpm instalados.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone o repositório
+git clone https://github.com/yanchagas04/yafm.git
+cd yafm
+
+# Instale as dependências
+pnpm install
+
+# Inicie o servidor de desenvolvimento
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts disponíveis
 
-## Learn More
+| Comando      | Descrição                            |
+| ------------ | ------------------------------------ |
+| `pnpm dev`   | Inicia o servidor de desenvolvimento |
+| `pnpm build` | Gera o build de produção             |
+| `pnpm start` | Inicia o servidor em modo produção   |
+| `pnpm lint`  | Executa o ESLint                     |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estrutura do projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+yafm/
+├── app/
+│   ├── globals.css       # Estilos globais
+│   ├── layout.tsx        # Layout raiz
+│   └── page.tsx          # Página inicial
+├── components/
+│   └── landing/
+│       ├── cards.tsx     # Cards de funcionalidades
+│       ├── header.tsx    # Cabeçalho / navegação
+│       └── purpose.tsx   # Seção "O que é o YAFM?"
+└── public/               # Arquivos estáticos
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Distribuído sob a licença GPL. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
