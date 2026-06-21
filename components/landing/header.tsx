@@ -2,7 +2,7 @@ import { PiggyBank } from "lucide-react";
 
 export default function Header() {
     return (
-        <header className="flex w-full h-fit justify-between items-center backdrop-blur-xs bg-slate-950/10 p-4 sticky top-0 z-50">
+        <header className="flex w-full h-fit justify-between items-center backdrop-blur-xs md:bg-transparent bg-slate-950/10 p-4 sticky top-0 z-50">
             <div className="flex items-center gap-3">
                 <PiggyBank className="w-8 h-8 text-emerald-500" />
                 <span className="flex flex-col w-fit h-fit">

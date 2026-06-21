@@ -58,7 +58,7 @@ function Card(props: CardProps) {
 
 export default function Cards() {
     return (
-        <section className="w-full max-w-4/5 px-6 py-16 flex flex-col items-center">
+        <section className="w-full max-w-4/5 p-6 flex flex-col items-center">
             <div className="flex-wrap flex gap-8 w-full justify-center">
                 {pillars.map((pillar, index) => (
                     <Card
