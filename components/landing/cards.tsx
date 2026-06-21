@@ -1,4 +1,4 @@
-import { CreditCard, BarChart3, Users, Sparkles, Tag } from "lucide-react";
+import { CreditCard, BarChart3, Users, Lightbulb, Tag } from "lucide-react";
 
 const pillars = [
     {
@@ -20,9 +20,9 @@ const pillars = [
 
   const avaibleSoon = [
     {
-      icon: <Sparkles className="w-6 h-6 text-teal-400" />,
-      title: "Automação real",
-      description: "A ideia aqui será enviar lembretes no e-mail para não esquecer de pagar a fatura do cartão.",
+      icon: <Lightbulb className="w-6 h-6 text-teal-400" />,
+      title: "Me lembre",
+      description: "Envio de lembretes no e-mail para não esquecer de pagar a fatura do cartão junto de um relatório mensal de gastos.",
     },
     {
       icon: <Tag className="w-6 h-6 text-teal-400" />,
