@@ -1,10 +1,11 @@
-import { PiggyBank } from "lucide-react";
+import Image from "next/image";
+import YafmLogo from "@/public/yafm-logo.png"
 
 export default function Header() {
     return (
         <header className="flex w-full h-fit justify-between items-center backdrop-blur-xs md:bg-transparent bg-slate-950/10 p-4 sticky top-0 z-50">
             <div className="flex items-center gap-3">
-                <PiggyBank className="w-8 h-8 text-emerald-500" />
+                <Image src={YafmLogo} alt="YAFM Logo" width={48} height={48}/>
                 <span className="flex flex-col w-fit h-fit">
                     <h1 className="text-2xl font-bold">YAFM</h1>
                     <p className="text-xs text-slate-400">Yet Another Financial Manager</p>
