@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import YafmLogo from "@/public/yafm-logo.png"
 
 export default function Header() {
@@ -12,8 +13,8 @@ export default function Header() {
                 </span>
             </div>
             <div className="flex items-center gap-4">
-                <button className="text-sm font-medium hover:text-emerald-400 cursor-pointer">Entrar</button>
-                <button className="bg-emerald-600 hover:bg-emerald-500 px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-colors">Registrar-se</button>
+                <Link href="/acess" className="text-sm font-medium hover:text-emerald-400 cursor-pointer transition-colors">Entrar</Link>
+                <Link href="/acess" className="bg-emerald-600 hover:bg-emerald-500 px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-colors">Registrar-se</Link>
             </div>
         </header>
     );
